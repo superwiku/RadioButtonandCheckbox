@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="RADIOBUTTON AND CHECKBOX DEMO"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14pt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/r_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rb_acer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="ACER" />
+        <RadioButton
+            android:id="@+id/rb_asus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASUS"/>
+        <RadioButton
+            android:id="@+id/rb_lenovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LENOVO"/>
+        <RadioButton
+            android:id="@+id/rb_axioo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AXIOO"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_pilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="pilihan laptop anda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/r_group" />
+
+    <CheckBox
+        android:id="@+id/ck_nasgor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Nasi Goreng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pilih" />
+
+    <CheckBox
+        android:id="@+id/ck_migor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mie Goreng"
+        app:layout_constraintStart_toStartOf="@+id/ck_nasgor"
+        app:layout_constraintTop_toBottomOf="@+id/ck_nasgor" />
+
+    <CheckBox
+        android:id="@+id/ck_capcay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Capcay"
+        app:layout_constraintStart_toStartOf="@+id/ck_migor"
+        app:layout_constraintTop_toBottomOf="@+id/ck_migor" />
+
+    <CheckBox
+        android:id="@+id/ck_tiau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Kweetiau"
+        app:layout_constraintStart_toStartOf="@+id/ck_capcay"
+        app:layout_constraintTop_toBottomOf="@+id/ck_capcay" />
+
+    <Button
+        android:id="@+id/btn_makan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="makanan pilihan anda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ck_tiau" />
+
+</android.support.constraint.ConstraintLayout>
